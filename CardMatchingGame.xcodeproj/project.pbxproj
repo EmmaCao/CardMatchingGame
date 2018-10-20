@@ -15,6 +15,8 @@
 		446183DB2179A0C40056AAB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 446183DA2179A0C40056AAB5 /* main.m */; };
 		446183E62179A2A70056AAB5 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 446183E52179A2A70056AAB5 /* Card.m */; };
 		446183E92179DF000056AAB5 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 446183E82179DF000056AAB5 /* Deck.m */; };
+		B5D892B5217B4A3800CEAF0D /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D892B4217B4A3800CEAF0D /* PlayingCard.m */; };
+		B5D892B8217B563F00CEAF0D /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D892B7217B563F00CEAF0D /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		446183E52179A2A70056AAB5 /* Card.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		446183E72179DF000056AAB5 /* Deck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		446183E82179DF000056AAB5 /* Deck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		B5D892B3217B4A3800CEAF0D /* PlayingCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		B5D892B4217B4A3800CEAF0D /* PlayingCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		B5D892B6217B563F00CEAF0D /* PlayingCardDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		B5D892B7217B563F00CEAF0D /* PlayingCardDeck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,10 @@
 				446183E52179A2A70056AAB5 /* Card.m */,
 				446183E72179DF000056AAB5 /* Deck.h */,
 				446183E82179DF000056AAB5 /* Deck.m */,
+				B5D892B3217B4A3800CEAF0D /* PlayingCard.h */,
+				B5D892B4217B4A3800CEAF0D /* PlayingCard.m */,
+				B5D892B6217B563F00CEAF0D /* PlayingCardDeck.h */,
+				B5D892B7217B563F00CEAF0D /* PlayingCardDeck.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,9 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D892B5217B4A3800CEAF0D /* PlayingCard.m in Sources */,
 				446183E92179DF000056AAB5 /* Deck.m in Sources */,
 				446183D02179A0C20056AAB5 /* ViewController.m in Sources */,
 				446183DB2179A0C40056AAB5 /* main.m in Sources */,
+				B5D892B8217B563F00CEAF0D /* PlayingCardDeck.m in Sources */,
 				446183CD2179A0C20056AAB5 /* AppDelegate.m in Sources */,
 				446183E62179A2A70056AAB5 /* Card.m in Sources */,
 			);
@@ -316,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPFX4D87J3;
 				INFOPLIST_FILE = CardMatchingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPFX4D87J3;
 				INFOPLIST_FILE = CardMatchingGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

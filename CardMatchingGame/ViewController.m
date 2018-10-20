@@ -8,15 +8,41 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "PlayingCardDeck.h"
 
+@interface ViewController ()
+{
+    PlayingCardDeck *deck;
+}
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (nonatomic) int flipCount;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+-(void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    deck = [[PlayingCardDeck alloc] init];
+}
+
+- (IBAction)touchCardButton:(UIButton *)sender
+{
+    if ([sender.currentTitle length]) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }else{
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+        [sender setTitle:[deck drawRandomCard].contents forState:UIControlStateNormal];
+    }
+    self.flipCount++;
+}
+
+-(void)setFlipCount:(int)flipCount
+{
+    _flipCount = flipCount;
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips:%d", self.flipCount];
 }
 
 
